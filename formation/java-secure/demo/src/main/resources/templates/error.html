@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erreur d'inscription</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center">Erreur</h1>
+    <p class="text-center text-danger" th:text="${message}"></p> <!-- Affiche le message d'erreur dynamique -->
+    <div class="text-center">
+        <a href="/users/register" class="btn btn-primary">Réessayer</a>
+    </div>
+</div>
+</body>
+</html>

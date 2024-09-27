@@ -1,0 +1,1 @@
+https://medium.com/@rvaradharajan69/dependency-check-manually-guide-using-maven-3996fde94a52
