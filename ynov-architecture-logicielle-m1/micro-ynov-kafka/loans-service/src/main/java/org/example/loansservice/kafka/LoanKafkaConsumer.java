@@ -21,7 +21,6 @@ public class LoanKafkaConsumer {
     @KafkaListener(topics = "account-events", groupId = "loan-group")
     public void consumeAccountDeletedEvent(String message) {
         logger.info("Received account deleted event: {}", message);
-
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             JsonNode event = objectMapper.readTree(message);
